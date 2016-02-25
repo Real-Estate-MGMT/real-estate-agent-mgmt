@@ -1,0 +1,71 @@
+*:focus {
+    outline: none;
+}
+*::-moz-focus-inner {
+    border: 0;
+}
+.leftSide {
+    width: 250px;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #e8e8e8;
+}
+.title {
+    font-size: 16px;
+    padding: 15px 15px 5px 15px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.subtitle {
+    font-size: 12px;
+    padding: 0 15px 15px 15px;
+}
+.tocTitle {
+    font-weight: bold;
+    padding: 15px;
+}
+.toc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.toc ul li.tocHeader {
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.toc ul li a {
+    display: block;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.toc ul li a:hover {
+    background-color: #dedede;
+}
+.content {
+    position: relative;
+    top: 0;
+    margin-left: 250px;
+    bottom: 0;
+    padding: 20px;
+    overflow: auto;
+    height: 100%;
+}
+.palette {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.palette {
+    width: 100%;
+}
+.palette td, th {
+    padding: 5px;
+    border: 1px solid #e8e8e8;
+}
+.palette td {
+    color: #fff;
+}
