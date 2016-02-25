@@ -49,7 +49,7 @@
         address : '39 Remsen St, Brooklyn, NY 11201, USA',
         bedrooms : '3',
         bathrooms : '2',
-        area : '3430 Sq Ft',
+        area : '3430 m2',
         position : {
             lat : 40.696047,
             lng : -73.997159
@@ -63,7 +63,7 @@
         address : '169 Warren St, Brooklyn, NY 11201, USA',
         bedrooms : '2',
         bathrooms : '2',
-        area : '4430 Sq Ft',
+        area : '4430 m2',
         position : {
             lat : 40.688042,
             lng : -73.996472
@@ -77,7 +77,7 @@
         address : '38-62 Water St, Brooklyn, NY 11201, USA',
         bedrooms : '2',
         bathrooms : '3',
-        area : '2640 Sq Ft',
+        area : '2640 m2',
         position : {
             lat : 40.702620,
             lng : -73.989682
@@ -91,7 +91,7 @@
         address : 'Wunsch Bldg, Brooklyn, NY 11201, USA',
         bedrooms : '3',
         bathrooms : '2',
-        area : '2800 Sq Ft',
+        area : '2800 m2',
         position : {
             lat : 40.694355,
             lng : -73.985229
@@ -105,7 +105,7 @@
         address : '95 Butler St, Brooklyn, NY 11231, USA',
         bedrooms : '2',
         bathrooms : '2',
-        area : '2750 Sq Ft',
+        area : '2750 m2',
         position : {
             lat : 40.686838,
             lng : -73.990078
@@ -119,7 +119,7 @@
         address : '39 Remsen St, Brooklyn, NY 11201, USA',
         bedrooms : '3',
         bathrooms : '2',
-        area : '3430 Sq Ft',
+        area : '3430 m2',
         position : {
             lat : 40.703686,
             lng : -73.982910
@@ -133,7 +133,7 @@
         address : '169 Warren St, Brooklyn, NY 11201, USA',
         bedrooms : '2',
         bathrooms : '2',
-        area : '4430 Sq Ft',
+        area : '4430 m2',
         position : {
             lat : 40.702189,
             lng : -73.995098
@@ -147,7 +147,7 @@
         address : '38-62 Water St, Brooklyn, NY 11201, USA',
         bedrooms : '2',
         bathrooms : '3',
-        area : '2640 Sq Ft',
+        area : '2640 m2',
         position : {
             lat : 40.687417,
             lng : -73.982653
@@ -161,7 +161,7 @@
         address : 'Wunsch Bldg, Brooklyn, NY 11201, USA',
         bedrooms : '3',
         bathrooms : '2',
-        area : '2800 Sq Ft',
+        area : '2800 m2',
         position : {
             lat : 40.694120,
             lng : -73.974413
@@ -175,7 +175,7 @@
         address : '95 Butler St, Brooklyn, NY 11231, USA',
         bedrooms : '2',
         bathrooms : '2',
-        area : '2750 Sq Ft',
+        area : '2750 m2',
         position : {
             lat : 40.682665,
             lng : -74.000934
@@ -530,9 +530,9 @@
         step: 10,
         slide: function(event, ui) {
             $('.areaSlider .sliderTooltip .stLabel').html(
-                ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' Sq Ft' +
+                ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' m2' +
                 ' <span class="fa fa-arrows-h"></span> ' +
-                ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' Sq Ft'
+                ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' m2'
             );
             var areaSliderRangeLeft = parseInt($('.areaSlider .ui-slider-range').css('left'));
             var areaSliderRangeWidth = $('.areaSlider .ui-slider-range').width();
@@ -541,9 +541,9 @@
         }
     });
     $('.areaSlider .sliderTooltip .stLabel').html(
-        $('.areaSlider').slider('values', 0).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' Sq Ft' +
+        $('.areaSlider').slider('values', 0).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' m2' +
         ' <span class="fa fa-arrows-h"></span> ' +
-        $('.areaSlider').slider('values', 1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' Sq Ft'
+        $('.areaSlider').slider('values', 1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + ' m2'
     );
     var areaSliderRangeLeft = parseInt($('.areaSlider .ui-slider-range').css('left'));
     var areaSliderRangeWidth = $('.areaSlider .ui-slider-range').width();
