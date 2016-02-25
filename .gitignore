@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+*.DS_Store
+JAC-Consultores.iml
+real-estate-agent-mgmt.iml
