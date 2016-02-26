@@ -1,0 +1,33 @@
+{
+  "name": "real-estate-agent-mgmt",
+  "version": "1.0.0",
+  "description": "Application to manage the data of every real estate agent",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "real",
+    "estate",
+    "agent",
+    "management",
+    "houses",
+    "lots"
+  ],
+  "authors": [
+    "Dennis Hernández"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "bootstrap-table": "~1.10.0"
+  }
+}
