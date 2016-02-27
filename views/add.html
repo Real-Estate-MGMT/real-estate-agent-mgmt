@@ -1,0 +1,113 @@
+<div id="wrapper" ng-controller="addCtrl">
+    <div id="mapView" class="mob-min"><div class="mapPlaceholder"><span class="fa fa-spin fa-spinner"></span> Cargando el mapa...</div></div>
+    <div id="content" class="mob-max">
+        <div class="rightContainer">
+            <h1>Agregar una nueva propiedad</h1>
+            <form role="form">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label>Precio</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">$</div>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Descripción</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Dirección <span id="latitude" class="label label-default"></span> <span id="longitude" class="label label-default"></span></label>
+                    <input class="form-control" type="text" id="address" placeholder="ingrese la dirección" autocomplete="off">
+                    <p class="help-block"></p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <div class="form-group">
+                            <label>Cuartos</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <div class="form-group">
+                            <label>Baños</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <div class="form-group">
+                            <label>Area</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text">
+                                <div class="input-group-addon">m2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <div class="btn-group">
+                            <label>Tipo</label>
+                            <div class="clearfix"></div>
+                            <a href="#" data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                <span class="dropdown-label">Venta</span>&nbsp;&nbsp;&nbsp;<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-select">
+                                <li class="active"><input type="radio" name="ptype" checked="checked"><a href="#">Venta</a></li>
+                                <li><input type="radio" name="ptype"><a href="#">Compra</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group">
+                            <label>Fotos</label>
+                            <input type="file" id="uploadImgs" class="file" multiple data-show-upload="false" data-show-caption="false" data-show-remove="false" accept="image/jpeg,image/png" data-browse-class="btn btn-o btn-default" data-browse-label="Buscar Imagenes">
+                            <p class="help-block">Puede seleccionar varias imagenes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label>Comodidades</label>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Garage</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Sistema de Seguridad</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Aire Acondicionado</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Balcón</label></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Piscina</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Internet</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Calentador de agua</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> TV por Cable</label></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Jardín</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Teléfono</label></div>
+                            <div class="checkbox custom-checkbox"><label><input type="checkbox"><span class="fa fa-check"></span> Chimenea</label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="btn btn-green btn-lg">Agregar Propiedad</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
