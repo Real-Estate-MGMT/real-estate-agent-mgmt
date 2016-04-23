@@ -15,7 +15,7 @@
 
 		// AMD. Register as an anonymous module.
 		define([
-			"jquery.min.js",
+			"jquery",
 			"jquery-ui/sortable"
 		], factory );
 	} else {

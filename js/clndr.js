@@ -24,7 +24,7 @@
   if (typeof define === 'function' && define.amd) {
 
     // AMD. Register as an anonymous module.
-    define(['jquery.min.js', 'moment'], factory);
+    define(['jquery', 'moment'], factory);
   } else if (typeof exports === 'object') {
 
     // Node/CommonJS
