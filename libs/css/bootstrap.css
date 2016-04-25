@@ -2798,7 +2798,7 @@ fieldset[disabled] .btn {
 }
 .btn-o.btn-default {
   background-color: transparent;
-  color: color: #333;
+  color: #333;
   border-color: #ccc;
 } 
 .no-touch .btn-default:hover,
