@@ -26,7 +26,9 @@ $scripts = [
     'map.js',
     'index.js',
     //'services/noticias.js',
+    'services/mapServices.js',
     'controllers/indiceController.js',
+    'controllers/propiedadController.js',
     //'controllers/detalle.js',
     //'controllers/formulario.js'
 ];
@@ -37,6 +39,7 @@ $scripts = [
     <head>
         <meta charset="UTF-8">
         <title>Real Estate Management</title>
+        <link rel="icon" href="favicon.ico">
         <link href="libs/css/bootstrap.css" rel="stylesheet">
         <link href="libs/css/font-awesome.css" rel="stylesheet">
         <link href="libs/css/simple-line-icons.css" rel="stylesheet">
@@ -44,7 +47,6 @@ $scripts = [
         <link href="libs/css/datepicker.css" rel="stylesheet">
         <link href="libs/css/fileinput.min.css" rel="stylesheet">
         <link href="libs/css/app.css" rel="stylesheet">
-
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -66,7 +68,7 @@ $scripts = [
         <div class="headerUserWraper">
             <a href="#" class="userHandler dropdown-toggle" data-toggle="dropdown"><span class="icon-user"></span><span class="counter">5</span></a>
             <a href="#" class="headerUser dropdown-toggle" data-toggle="dropdown">
-                <img class="avatar headerAvatar pull-left" src="images/avatar-1.png" alt="John Smith">
+                <img class="avatar headerAvatar pull-left" src="images/logo.jpg" alt="John Smith">
                 <div class="userTop pull-left">
                     <span class="headerUserName">JAC Consultores</span> <span class="fa fa-angle-down"></span>
                 </div>
